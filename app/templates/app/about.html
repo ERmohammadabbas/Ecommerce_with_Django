@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+
+{% block banner_slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/image/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/image/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/image/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/image/banner/b4.jpg' %}" class="d-block w-100 h-100" alt="banner">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock banner_slider %}
+
+{% block main-content %}
+  <div class="container mt-3">
+    <br>
+      <h2 class="text-center bg-dark text-white">About Us</h2>
+    <br>
+    <div class="row container">
+      <p class="fs-4 text-center">
+        A public limited company, also known as a PLC, is a company structure available to businesses in the UK. Unlike the other structures such as sole trader and partnerships, the business exists as a separate entity to the owners, offering protection from liabilities and debt.This is because a private limited company needs to have share capital with a value of £50,000 to be eligible to go public,
+      </p>
+    </div>
+    <br><br>
+      <h2 class="text-center bg-dark text-white">Mission</h2>
+    <br>
+    <div class="row container">
+      <p class="fs-4 text-center">
+        The Mission Group plc provides marketing and advertising related services in the United Kingdom, rest of Europe, Asia, and the United States. The company offers marketing communications services specializing in the technology, medical, and automotive sector; public relations services; and advertising, media buying, digital marketing, events, and training services.
+      </p>
+    </div>
+  </div>
+<br><br>
+{% endblock main-content %}
